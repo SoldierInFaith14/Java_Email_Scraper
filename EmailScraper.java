@@ -27,6 +27,7 @@ public class EmailScraper {
             password = scan.nextLine();
 
             if (email.contains("@gmail.com")) {
+                // For gmail, generate a custom app password for your account.
                 store.connect("imap.gmail.com", email, password);
             }
             else if (email.contains("@outlook.com")) {
